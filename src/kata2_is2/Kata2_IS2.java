@@ -9,15 +9,11 @@ public class Kata2_IS2 {
         
         int[] data = {1, 2, 1, 3, 5, 3, 4, 2, 1 ,4 ,4, 3, 5, 3, 3};
         
-        Map<Integer, Integer>  histogram = new HashMap<>();
+        Histogram histo = new Histogram(data);
+        Map<Integer,Integer> histogr = histo.getHistogram();
         
-        for (int key : data) {
-            histogram.put(
-                    key, histogram.containsKey(key)? histogram.get(key) + 1: 1);
-        }
-        
-        for(Integer key: histogram.keySet()) {
-            System.out.println(key + " --> " + histogram.get(key));
+        for(Integer key: histogr.keySet()) {
+            System.out.println(key + " --> " + histogr.get(key));
         }
     }
     
