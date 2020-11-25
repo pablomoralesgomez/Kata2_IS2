@@ -7,7 +7,7 @@ public class Kata2_IS2 {
 
     public static void main(String[] args) {
         
-        int[] data = {1, 2, 1, 3, 5, 3, 4, 2, 1 ,4 ,4, 3, 5, 3, 3};
+        Integer[] data = {1, 2, 1, 3, 5, 3, 4, 2, 1 ,4 ,4, 3, 5, 3, 3};
         
         Histogram histo = new Histogram(data);
         Map<Integer,Integer> histogr = histo.getHistogram();
